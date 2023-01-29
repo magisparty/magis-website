@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital@0;1&family=Spectral+SC:ital,wght@0,400;0,600;1,600&family=Spectral:wght@200;400&display=swap');
 
+/* navigations & header */
+
 .my-custom-nav {
   background-color: #F4F9F9;
   border-bottom : 3px solid #d5dada;
@@ -27,24 +29,31 @@
   margin-top: 2rem;
 }
 
-.line-1, .line-2{
-  width: 5%;
+@media screen and (max-width: 900px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    width: 55%;
+  }
 }
 
-hr {
-  margin: 0.5rem;
+/* teaser video */
+
+.teaser-video-container {
+  width: 100%;
 }
 
-.my-custom-border-bottom {
-  width: 30%;
-  border-bottom: 1px solid #d5dada;
-  border-top: 1px solid #d5dada;
-  margin: auto;
-  padding-top: 2px;
+.teaser-video-1 {
+  width: 70%;
 }
 
-.position-title, .representative-title, .footer-title, .credits, .magis-platforms-header-title, .platform-activity {
-  font-family: 'Spectral', serif;
+@media screen and (max-width: 900px) {
+  .teaser-video-1 {
+    width: 100%;
+  }
 }
 
 /* card design */
@@ -81,93 +90,115 @@ hr {
   .card-text {
     font-size: 15px;
   }
-}
+  } 
 
 
-.card-title, .subheader-title {
-  font-family: 'Cormorant', serif;
-}
+  .card-title, .subheader-title {
+    font-family: 'Cormorant', serif;
+  }
 
 
-.card-text {
-  font-family: 'Libre Baskerville', serif;
-}
+  .card-text {
+    font-family: 'Libre Baskerville', serif;
+  }
 
 /* Candidate Information */
 
-.candidate-information {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.candidate-tagline, .magis-tagline, .platform-title {
-  font-family: 'Cormorant', serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.my-custom-box {
-  height: 100%;
-}
-
-.leadership-background li {
-  padding-bottom: 0.5rem;
-}
-
-.student-info {
-  font-family: 'Spectral SC', serif;
-  background-color: #FAF7F0;
-  height: 80%;
-}
-
-.responsive-img {
-  width: 35%;
-}
-
-@media screen and (max-width: 800px) {
   .candidate-information {
-    display: block;
-    width: 100%; 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
-    text-align: center;  
+  .candidate-tagline, .magis-tagline, .platform-title {
+    font-family: 'Cormorant', serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .my-custom-box {
+    height: 100%;
   }
 
   .leadership-background li {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
-}
+
+  .student-info {
+    font-family: 'Spectral SC', serif;
+    background-color: #FAF7F0;
+    height: 80%;
+  }
+
+  .responsive-img {
+    width: 35%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .candidate-information {
+      display: block;
+      width: 100%; 
+
+      text-align: center;  
+    }
+
+    .leadership-background li {
+      padding-bottom: 1rem;
+    }
+  }
 
 /* platforms */
 
-.magis-platforms {
-  width: 100%;
-}
+  .magis-platforms {
+    width: 100%;
+  }
 
-.subheader-title {
-  padding: 0;
-  margin: 0;
-}
+  .subheader-title {
+    padding: 0;
+    margin: 0;
+  }
 
-.platform-activity {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  width: 100%;
-}
+  .platform-activity {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
 
 
-/* Footer */
+  /* Footer */
 
-.my-custom-footer {
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  padding: 25px 0 25px 0;
+  .my-custom-footer {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 25px 0 25px 0;
 
-  background-color: #B7C4CF;
-}
+    background-color: #B7C4CF;
+  }
 
-.footer-title {
-  letter-spacing: 2.5px;
-}
+  .footer-title {
+    letter-spacing: 2.5px;
+  }
+
+/* other */
+
+  .line-1, .line-2{
+    width: 5%;
+  }
+
+  hr {
+    margin: 0.5rem;
+  }
+
+  .my-custom-border-bottom {
+    width: 30%;
+    border-bottom: 1px solid #d5dada;
+    border-top: 1px solid #d5dada;
+    margin: auto;
+    padding-top: 2px;
+  }
+
+  .position-title, .representative-title, .footer-title, .credits, .magis-platforms-header-title, .platform-activity {
+    font-family: 'Spectral', serif;
+  }
